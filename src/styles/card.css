@@ -13,7 +13,7 @@
     text-align: center;
     object-fit: cover;
     object-position: center;
-    image-rendering: 'high-quality'
+    /*image-rendering: 'high-quality'*/
 }
 
 /* CONTAINER */
