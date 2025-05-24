@@ -1,6 +1,6 @@
 # My Personal Professional Card 
 
-"Hi there!, I'm Alvaro Yuste. I hope you like my first personal card
+Hi there!, I'm Alvaro Yuste. I hope you like my first personal card
 
 
 ![example page](pageexample.png)
@@ -11,7 +11,7 @@
 
 ## Deploy
 
-[![](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://personal-card-astro.netlify.app/)
+[![](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://alvaro-yuste.com)
 
 ## 🚀 Project Structure
 
@@ -22,8 +22,8 @@ public/
   ├── files/
   |      └── CV Alvaro Yuste Valles.pdf
   ├── images/
-  |      └── profile2.webp
-  ├── favicon.ico
+  |      └── IMAGE_5575.jpeg
+  ├── destello.ico
 src/
   ├── components/
   │     └── Card.astro
