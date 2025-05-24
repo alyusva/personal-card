@@ -1,11 +1,10 @@
 
 public/
   ├── files/
-  |      └── resume-cv.pdf -> here you can put your resume in pdf
+  |      └── CV Alvaro Yuste Valles.pdf
   ├── images/
-  |      └── profile.webp  -> here you can put your profile photo, these two are an example, you can delete them
-  |      └── profile2.webp
-  ├── favicon.ico
+  |      └── IMG_5575.jpeg 
+  ├── destello.ico
 src/
   ├── components/
   │     └── Card.astro  -> the card is only its structure
@@ -17,10 +16,3 @@ src/
   │     ├── global.css
   │     └── card.css -> here you can change the card styles. Colors, sizes, fonts, etc.
 
-  <!--
-	"Hi there!, I'm Brian. I hope this small template helps you gain visibility while you build great projects. Thank you for using it. I wish you success in everything you set out to do; you will surely achieve great things.
-
-	Here is my GitHub {https://github.com/alcarazbrian}. You can help me by following me, giving a Star to the template, and sharing it so others can see and use it.
-
-	Have a great day!"
- -->
