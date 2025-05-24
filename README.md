@@ -1,6 +1,6 @@
 # My Personal Professional Card 
 
-"Hi there!, I'm Alvaro Yuste. I hope you like my first personal card
+Hi there!, I'm Alvaro Yuste. I hope you like my first personal card
 
 
 ![example page](pageexample.png)
