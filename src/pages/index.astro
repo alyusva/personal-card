@@ -3,6 +3,7 @@
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
+import Analytics from '@vercel/analytics/astro';
 ---
 
 <BaseLayout title="Alvaro Yuste Card" description="Alvaro Yuste Valles Personal Card">
@@ -19,4 +20,5 @@ Let's collaborate <strong>TOGETHER!</strong>`}
 	  cvLink="/files/CV Alvaro Yuste Valles.pdf"
 	  profileImage="/images/IMG_5575.jpeg"
 	/>
+<Analytics />
 </BaseLayout>
