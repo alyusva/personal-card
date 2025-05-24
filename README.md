@@ -8,9 +8,6 @@
 
 <hr/>
 
-<h3 align="center">
-Contact me if you are interested!
-</h3>
 
 ## Deploy
 
