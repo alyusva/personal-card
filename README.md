@@ -22,8 +22,8 @@ public/
   ├── files/
   |      └── CV Alvaro Yuste Valles.pdf
   ├── images/
-  |      └── profile2.webp
-  ├── favicon.ico
+  |      └── IMAGE_5575.jpeg
+  ├── destello.ico
 src/
   ├── components/
   │     └── Card.astro
