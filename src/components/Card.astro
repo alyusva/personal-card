@@ -3,9 +3,6 @@
 const { name, position, aboutMe, linkedin, github, cvLink, profileImage } = Astro.props;
 
 import '../styles/card.css';
-
-// Separar el texto por saltos de línea reales
-const aboutLines = aboutMe.split('\n');
 ---
 
 <div class="container">
@@ -13,16 +10,7 @@ const aboutLines = aboutMe.split('\n');
         <div class="descripcion">
             <h1>{name}</h1>
             <h2>{position}</h2>
-            <p>
-                {
-                    aboutLines.map((line, index) => (
-                        <>
-                            {line}
-                            <br />
-                        </>
-                    ))
-                }
-            </p>
+            <p set:html={aboutMe} />
             <div class="icons">
                 <a href={linkedin} class="hover-text" target="_blank">
                     <span class="tooltip-text" id="fade">LinkedIn</span>
