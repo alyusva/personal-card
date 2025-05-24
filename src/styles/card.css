@@ -30,7 +30,7 @@
 /* CARD */
 .card-container {
     display: flex;
-    width: 800px; /* antes: 650px */
+    width: 1000px; /* antes: 650px */
     height: auto;
     background: linear-gradient(to right, #ffcc70, #60a5fa); /*  (#12a89c, #024945)  */
     border-radius: 12px;
