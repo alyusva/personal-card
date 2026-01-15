@@ -1,27 +1,32 @@
 ---
-// src/pages/index.astro
-
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
-import Analytics from '@vercel/analytics/astro';
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
+import Education from "../components/Education.astro";
+import Projects from "../components/Projects.astro";
+import Contact from "../components/Contact.astro";
+import Analytics from "@vercel/analytics/astro";
+
+const pageTitle = "Alvaro Yuste Valles | Process Engineer | AI Developer";
 ---
 
-<BaseLayout title="Alvaro Yuste Card" description="Alvaro Yuste Valles Personal Card">
-	<Card
-	  name="Alvaro Yuste Valles"
-	  position="Process Engineer & AI/ML developer"
-	  aboutMe={`Hi there! I'm Alvaro, an engineer specialized in <strong>industrial automation</strong>, <strong>artificial intelligence</strong>, and <strong>data analysis</strong>.<br /><br />
-With experience at companies like <strong>Antolin</strong> and currently at <strong>Signify (Philips Lighting)</strong>, I have led and contributed to projects that merge <strong>technology</strong>, <strong>efficiency</strong>, and a <strong>forward-looking vision</strong>.<br />  
-From the <strong>industrialization of battery pack manufacturing facility</strong>, <strong>Clearflood G2 assembly line</strong>, <strong>automated production flows</strong> using <strong>AGVs</strong> and <strong>AMRs</strong>, to the implementation of <strong>Computer Vision</strong> solutions for quality control, and <strong>LLM</strong> for <strong>industrial process optimization</strong>.<br /><br />
-I'm developing <strong>AVA</strong>: (AI Virtual Assistant) <strong>GenAI factory chatbot</strong> with all the knowledge and data sources (Agentic + RAG system).<br /><br />
-As part of my current <strong>Master's in Artificial Intelligence</strong>, I have also developed my own projects in the field of <strong>Natural Language Processing (NLP)</strong>, <strong>emotional intelligence</strong>, <strong>Retrieval-Augmented Generation (RAG)</strong> systems, and <strong>AI agents</strong>.  
-I have a strong interest in <strong>innovation with real-world impact</strong>.<br /><br />
-My goal: to <strong>connect the physical world with the digital one</strong> to transform <strong>industries</strong>, <strong>processes</strong>, and <strong>experiences</strong>.<br />
-Let's collaborate <strong>TOGETHER!</strong>`}
-	  linkedin="https://www.linkedin.com/in/alvaro-yuste-valles"
-	  github="https://github.com/alyusva"
-	  cvLink="/files/CV Alvaro Yuste Valles.pdf"
-	  profileImage="/images/IMG_5575.jpeg"
+<BaseLayout title={pageTitle}>
+	<Hero
+		name="Alvaro Yuste Valles"
+		position="Process Engineer | AI Developer"
+		cvLink="/files/CV Alvaro Yuste Valles.pdf"
 	/>
-<Analytics />
+
+	<About profileImage="/images/IMG_5575.jpeg" />
+
+	<Experience />
+
+	<Education />
+
+	<Projects />
+
+	<Contact />
+
+	<Analytics />
 </BaseLayout>

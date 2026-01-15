@@ -1,0 +1,132 @@
+---
+
+---
+
+<footer id="contact" class="footer section">
+    <div class="container footer-content">
+        <div class="footer-cta">
+            <h2 class="gradient-text">
+                Let's build something amazing together
+            </h2>
+            <p>
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your visions.
+            </p>
+            <a href="mailto:alyusva@gmail.com" class="btn btn-primary"
+                >Say Hello</a
+            >
+        </div>
+
+        <div class="footer-links">
+            <a
+                href="mailto:alyusva@gmail.com"
+                aria-label="Email"
+                title="Send me an email"
+            >
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a
+                href="https://calendar.app.google/zyZApuJCdZaB6Tkp8"
+                target="_blank"
+                aria-label="Schedule a meeting"
+                title="Schedule a 30-min call"
+            >
+                <i class="bi bi-calendar-check-fill"></i>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/alvaro-yuste-valles"
+                target="_blank"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+            >
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+                href="https://github.com/alyusva"
+                target="_blank"
+                aria-label="GitHub"
+                title="GitHub"
+            >
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+
+        <div class="copyright">
+            &copy; {new Date().getFullYear()} Alvaro Yuste Valles. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: var(--color-surface);
+        padding: var(--space-xl) 0 var(--space-md);
+        text-align: center;
+    }
+
+    .footer-cta {
+        max-width: 600px;
+        margin: 0 auto var(--space-xl);
+    }
+
+    .footer-cta h2 {
+        font-family: var(--font-display);
+        font-size: 2rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .footer-cta p {
+        color: var(--color-text-secondary);
+        margin-bottom: var(--space-md);
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: var(--color-accent-primary);
+        color: white;
+        border-radius: var(--radius-full);
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--transition-normal);
+    }
+
+    .btn:hover {
+        background: var(--color-accent-secondary);
+        transform: translateY(-2px);
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
+    }
+
+    .footer-links a {
+        font-size: 1.5rem;
+        color: var(--color-text-secondary);
+        transition: var(--transition-fast);
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--color-surface-hover);
+        text-decoration: none;
+    }
+
+    .footer-links a:hover {
+        color: var(--color-bg);
+        background: var(--color-text-primary);
+        transform: translateY(-3px);
+    }
+
+    .copyright {
+        color: var(--color-text-tertiary);
+        font-size: 0.9rem;
+        border-top: 1px solid var(--color-surface-hover);
+        padding-top: var(--space-md);
+    }
+</style>

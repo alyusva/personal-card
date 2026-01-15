@@ -1,0 +1,144 @@
+---
+const projects = [
+    {
+        title: "Rotator Cuff AI Diagnosis",
+        description:
+            "AI solution to detect and classify calcifications in the rotator cuff using CNNs for image analysis and ML for diagnostic classification, in collaboration with Hospital Universitario Rey Juan Carlos.",
+        tags: ["CNNs", "Medical AI", "Image Analysis", "Python"],
+    },
+    {
+        title: "AVA (AI Virtual Assistant)",
+        description:
+            "Agentic AI virtual assistant powered by RAG systems to enhance industrial data access and decision-making in factory environments.",
+        tags: ["GenAI", "RAG", "LangChain", "Python"],
+    },
+    {
+        title: "Computer Vision QC",
+        description:
+            "Implementation of Computer Vision solutions and poka-yoke strategies for automated quality control in production lines.",
+        tags: ["Computer Vision", "Quality Control", "Automation"],
+    },
+    {
+        title: "ClearFlood G2 Industrialization",
+        description:
+            "Led the industrialization of ClearFlood G2, PUR gasket sealing, and battery packer systems, streamlining production workflows.",
+        tags: ["Industrialization", "Assembly Line", "Signify"],
+    },
+    {
+        title: "AGV & AMR Integration",
+        description:
+            "Designed, programmed, and implemented automated material flows using AGVs and AMRs for logistics optimization.",
+        tags: ["AGV", "AMR", "Logistics", "Automation"],
+    },
+    {
+        title: "Mercedes G-Class Roof",
+        description:
+            "Led the industrialization of the leather roof manufacturing process for the Mercedes G-Class at Antolin.",
+        tags: ["Automotive", "Manufacturing", "Antolin"],
+    },
+];
+---
+
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <h2 class="title-section">Featured Projects</h2>
+
+        <div class="projects-grid">
+            {
+                projects.map((project) => (
+                    <div class="project-card">
+                        <h3 class="card-title">{project.title}</h3>
+                        <p class="card-desc">{project.description}</p>
+                        <div class="card-tags">
+                            {project.tags.map((tag) => (
+                                <span class="tag">{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .projects-section {
+        background-color: var(--color-bg);
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    @media (min-width: 768px) {
+        .projects-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .project-card {
+        background: var(--color-bg-secondary);
+        padding: var(--space-md);
+        border-radius: var(--radius-lg);
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid transparent;
+    }
+
+    .project-card:hover {
+        transform: scale(1.02);
+        background: var(--color-bg);
+        box-shadow: var(--shadow-md);
+        border-color: var(--color-border);
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-sm);
+    }
+
+    .card-desc {
+        color: var(--color-text-secondary);
+        font-size: 1rem;
+        margin-bottom: var(--space-md);
+        flex-grow: 1;
+        line-height: 1.5;
+    }
+
+    .card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        color: var(--color-text-tertiary);
+        background: var(--color-bg); /* Contrast against secondary bg */
+        padding: 4px 10px;
+        border-radius: var(--radius-full);
+        font-weight: 500;
+        border: 1px solid var(--color-border);
+    }
+
+    /* Dark mode adjustments for nested backgrounds */
+    :global([data-theme="dark"]) .tag {
+        background: var(--color-bg-secondary);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: var(--color-text-secondary);
+    }
+
+    :global([data-theme="dark"]) .project-card {
+        background: var(--color-bg-secondary);
+    }
+
+    :global([data-theme="dark"]) .project-card:hover {
+        background: #2c2c2e; /* Slightly lighter than secondary */
+    }
+</style>

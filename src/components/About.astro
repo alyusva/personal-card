@@ -1,0 +1,140 @@
+---
+interface Props {
+    profileImage: string;
+}
+
+const { profileImage } = Astro.props;
+---
+
+<section id="about" class="section about-section">
+    <div class="container">
+        <div class="grid-layout">
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src={profileImage} alt="Alvaro Yuste Valles" />
+                </div>
+                <div class="image-decoration"></div>
+            </div>
+
+            <div class="content-container">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <div class="bio">
+                    <p>
+                        Engineer with a strong background in <strong>automation</strong>,
+                        <strong>AI</strong>, and <strong>industrial operations</strong>.
+                        I specialize in bridging the gap between technology and execution —
+                        from streamlining factory workflows to developing AI-driven tools
+                        with real business impact.
+                    </p>
+                    <p>
+                        I'm especially skilled at working <strong>cross-functionally</strong>,
+                        aligning teams around challenges, and translating complex tech into
+                        <strong>practical solutions</strong>. I thrive in environments where
+                        innovation, ownership, and people come together.
+                    </p>
+
+                    <div class="skills-preview">
+                        <span class="skill-tag">GenAI & RAG</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Industrial Automation</span>
+                        <span class="skill-tag">AGVs & AMRs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-section {
+        background-color: var(--color-bg);
+    }
+
+    .grid-layout {
+        display: grid;
+        gap: var(--space-xl);
+    }
+
+    @media (min-width: 768px) {
+        .grid-layout {
+            grid-template-columns: 1fr 1.5fr;
+            align-items: center;
+        }
+    }
+
+    .section-title {
+        font-family: var(--font-display);
+        font-size: 2.5rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .bio p {
+        color: var(--color-text-secondary);
+        font-size: 1.1rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .bio strong {
+        color: var(--color-text-primary);
+        font-weight: 600;
+    }
+
+    /* Image Styling */
+    .image-container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .image-wrapper {
+        position: relative;
+        z-index: 2;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        aspect-ratio: 1 / 1.2;
+        border: 2px solid var(--color-surface-hover);
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform var(--transition-slow);
+    }
+
+    .image-wrapper:hover img {
+        transform: scale(1.05);
+    }
+
+    .image-decoration {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid var(--color-accent-primary);
+        border-radius: var(--radius-lg);
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    /* Skills Tags */
+    .skills-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+        margin-top: var(--space-md);
+    }
+
+    .skill-tag {
+        background: var(--color-surface);
+        color: var(--color-accent-secondary);
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius-full);
+        font-size: 0.9rem;
+        font-weight: 500;
+        border: 1px solid var(--color-surface-hover);
+    }
+</style>

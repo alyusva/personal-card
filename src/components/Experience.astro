@@ -1,0 +1,206 @@
+---
+
+---
+
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <h2 class="title-section">Experience</h2>
+
+        <div class="experience-list">
+            <!-- Job 1: AI Researcher -->
+            <div class="job-item">
+                <div class="job-meta">
+                    <span class="job-date">Jan 2025 - Present</span>
+                    <h3 class="job-role">AI Researcher</h3>
+                    <a href="https://www.uspceu.com/" target="_blank" class="company-link">
+                        <img src="/images/logos/ceu.png" alt="CEU San Pablo" class="company-logo" />
+                        <h4 class="job-company">CEU San Pablo</h4>
+                    </a>
+                </div>
+                <div class="job-desc">
+                    <p>
+                        Developing an <strong>AI solution</strong> to detect and classify
+                        calcifications in the rotator cuff using <strong>CNNs</strong> for
+                        image analysis and <strong>ML</strong> for diagnostic classification,
+                        in collaboration with radiologists at Hospital Universitario Rey Juan Carlos.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="divider" />
+
+            <!-- Job 2: Process Engineer at Signify -->
+            <div class="job-item">
+                <div class="job-meta">
+                    <span class="job-date">Mar 2023 - Present</span>
+                    <h3 class="job-role">Process Engineer</h3>
+                    <a href="https://www.signify.com/" target="_blank" class="company-link">
+                        <img src="/images/logos/signify.png" alt="Signify" class="company-logo" />
+                        <h4 class="job-company">Signify (Philips Lighting)</h4>
+                    </a>
+                </div>
+                <div class="job-desc">
+                    <p>
+                        Currently developing <strong>AVA</strong>, an agentic AI virtual
+                        assistant powered by <strong>RAG systems</strong>, to enhance
+                        industrial data access and decision-making.
+                    </p>
+                    <p>
+                        Led the industrialization of <strong>ClearFlood G2</strong>,
+                        PUR gasket sealing, and battery packer systems. Designed and
+                        implemented <strong>automation and digitalization</strong> solutions,
+                        including <strong>computer vision</strong> systems and poka-yoke strategies.
+                        Optimized logistics through <strong>AGV and AMR</strong> integration.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="divider" />
+
+            <!-- Job 3: Project Launch Manager -->
+            <div class="job-item">
+                <div class="job-meta">
+                    <span class="job-date">Dec 2022 - Mar 2023</span>
+                    <h3 class="job-role">Project Launch Manager</h3>
+                    <a href="https://www.antolin.com/" target="_blank" class="company-link">
+                        <img src="/images/logos/antolin.png" alt="Antolin" class="company-logo" />
+                        <h4 class="job-company">Antolin</h4>
+                    </a>
+                </div>
+                <div class="job-desc">
+                    <p>
+                        Led the industrialization of the <strong>leather roof
+                        manufacturing process</strong> for the <strong>Mercedes G-Class</strong>,
+                        ensuring high-quality standards and production efficiency.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="divider" />
+
+            <!-- Job 4: Process Engineer at Antolin -->
+            <div class="job-item">
+                <div class="job-meta">
+                    <span class="job-date">Jun 2021 - Dec 2022</span>
+                    <h3 class="job-role">Process Engineer</h3>
+                    <a href="https://www.antolin.com/" target="_blank" class="company-link">
+                        <img src="/images/logos/antolin.png" alt="Antolin" class="company-logo" />
+                        <h4 class="job-company">Antolin</h4>
+                    </a>
+                </div>
+                <div class="job-desc">
+                    <p>
+                        Designed, programmed, and implemented material flows using
+                        <strong>AGVs</strong>. Responsible for automatic cutting processes
+                        with <strong>ZUND CNC machines</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .experience-section {
+        background-color: var(--color-bg);
+    }
+
+    .experience-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+    .job-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+        .job-item {
+            flex-direction: row;
+            gap: var(--space-lg);
+        }
+    }
+
+    .job-meta {
+        flex: 1;
+        max-width: 300px;
+        margin-bottom: var(--space-md);
+    }
+
+    @media (min-width: 768px) {
+        .job-meta {
+            margin-bottom: 0;
+        }
+    }
+
+    .job-date {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-accent);
+        font-weight: 600;
+        display: block;
+        margin-bottom: var(--space-xs);
+    }
+
+    .job-role {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+
+    .job-company {
+        font-size: 1.1rem;
+        color: var(--color-text-secondary);
+        font-weight: 400;
+    }
+
+    .company-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .company-link:hover {
+        opacity: 0.8;
+    }
+
+    .company-link:hover .job-company {
+        color: var(--color-accent);
+    }
+
+    .company-logo {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .job-desc {
+        flex: 2;
+        color: var(--color-text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .job-desc strong {
+        color: var(--color-text-primary);
+        font-weight: 500;
+    }
+
+    .job-desc p + p {
+        margin-top: 1rem;
+    }
+
+    .divider {
+        border: 0;
+        border-top: 1px solid var(--color-border);
+        margin: 0;
+    }
+</style>

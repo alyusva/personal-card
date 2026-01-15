@@ -1,0 +1,107 @@
+---
+interface Props {
+    name: string;
+    position: string;
+    cvLink: string;
+}
+
+const { name, position, cvLink } = Astro.props;
+---
+
+<section class="hero section">
+    <div class="container hero-content">
+        <div class="text-content">
+            <h1 class="title-large name">{name}</h1>
+            <h2 class="title-section position">{position}</h2>
+            <p class="tagline">
+                Connecting the <span class="highlight">physical world</span> with
+                the <span class="highlight">digital one</span> to transform industries.
+            </p>
+
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+                <a href={cvLink} target="_blank" class="btn btn-secondary"
+                    >Download CV</a
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        min-height: 80vh; /* Reduced height for cleaner feel */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 800px;
+    }
+
+    .name {
+        margin-bottom: var(--space-xs);
+        color: var(--color-text-primary);
+    }
+
+    .position {
+        color: var(--color-text-secondary);
+        font-weight: 500;
+        margin-bottom: var(--space-md);
+    }
+
+    .tagline {
+        font-size: 1.5rem; /* Larger, readable text */
+        line-height: 1.4;
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-lg);
+        font-weight: 400;
+    }
+
+    .highlight {
+        color: var(--color-accent);
+        font-weight: 600;
+    }
+
+    .cta-group {
+        display: flex;
+        gap: var(--space-sm);
+        justify-content: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: var(--radius-full);
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: var(--transition);
+    }
+
+    .btn-primary {
+        background: var(
+            --color-text-primary
+        ); /* Apple style black/white button */
+        color: var(--color-bg);
+    }
+
+    .btn-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+        text-decoration: none;
+    }
+
+    .btn-secondary {
+        background: transparent;
+        color: var(--color-accent);
+        background-color: var(--color-bg-secondary);
+    }
+
+    .btn-secondary:hover {
+        background-color: var(--color-border);
+        text-decoration: none;
+    }
+</style>

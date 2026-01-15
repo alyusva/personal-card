@@ -1,0 +1,145 @@
+---
+
+---
+
+<section id="education" class="section education-section">
+    <div class="container">
+        <h2 class="title-section">Education</h2>
+
+        <div class="education-grid">
+            <!-- Master's in AI & Big Data -->
+            <div class="edu-card">
+                <div class="edu-year">Sep 2024 - Ongoing</div>
+                <div class="edu-details">
+                    <h3 class="edu-degree">
+                        Master's in Artificial Intelligence & Big Data
+                    </h3>
+                    <a href="https://www.uspceu.com/" target="_blank" class="school-link">
+                        <img src="/images/logos/ceu.png" alt="CEU San Pablo" class="school-logo" />
+                        <h4 class="edu-school">Universidad CEU San Pablo</h4>
+                    </a>
+                    <p class="edu-desc">
+                        Best Academic Record
+                    </p>
+                </div>
+            </div>
+
+            <!-- Master's in Logistics -->
+            <div class="edu-card">
+                <div class="edu-year">Sep 2022 - Sep 2024</div>
+                <div class="edu-details">
+                    <h3 class="edu-degree">Master's in Logistics</h3>
+                    <a href="https://www.uva.es/" target="_blank" class="school-link">
+                        <img src="/images/logos/uva.png" alt="Universidad de Valladolid" class="school-logo" />
+                        <h4 class="edu-school">Universidad de Valladolid</h4>
+                    </a>
+                    <p class="edu-desc">
+                        Awarded the Michelin Prize for Best Master's Thesis in Process Organization
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bachelor's -->
+            <div class="edu-card">
+                <div class="edu-year">Sep 2017 - Jun 2022</div>
+                <div class="edu-details">
+                    <h3 class="edu-degree">Bachelor's in Industrial Electronics and Automation Engineering</h3>
+                    <a href="https://www.uva.es/" target="_blank" class="school-link">
+                        <img src="/images/logos/uva.png" alt="Universidad de Valladolid" class="school-logo" />
+                        <h4 class="edu-school">Universidad de Valladolid</h4>
+                    </a>
+                    <p class="edu-desc">
+                        Industrial automation, electronics, and control systems
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .education-section {
+        background-color: var(--color-bg-secondary);
+    }
+
+    .education-grid {
+        display: grid;
+        gap: var(--space-md);
+    }
+
+    .edu-card {
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-md);
+        background: var(--color-bg);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+    }
+
+    /* Apple-like list style on desktop */
+    @media (min-width: 768px) {
+        .edu-card {
+            flex-direction: row;
+            align-items: baseline;
+            gap: var(--space-md);
+        }
+    }
+
+    .edu-year {
+        font-size: 0.9rem;
+        color: var(--color-text-secondary);
+        font-weight: 600;
+        min-width: 100px;
+        margin-bottom: var(--space-xs);
+    }
+
+    @media (min-width: 768px) {
+        .edu-year {
+            margin-bottom: 0;
+        }
+    }
+
+    .edu-degree {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-bottom: 4px;
+    }
+
+    .edu-school {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+    .school-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        transition: var(--transition);
+        margin-bottom: var(--space-sm);
+    }
+
+    .school-link:hover {
+        opacity: 0.8;
+    }
+
+    .school-link:hover .edu-school {
+        color: var(--color-accent);
+    }
+
+    .school-logo {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .edu-desc {
+        color: var(--color-text-secondary);
+        font-size: 0.95rem;
+    }
+</style>
