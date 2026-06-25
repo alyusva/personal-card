@@ -2,10 +2,9 @@
 interface Props {
     name: string;
     position: string;
-    cvLink: string;
 }
 
-const { name, position, cvLink } = Astro.props;
+const { name, position } = Astro.props;
 ---
 
 <section class="hero section">
@@ -20,9 +19,6 @@ const { name, position, cvLink } = Astro.props;
 
             <div class="cta-group">
                 <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
-                <a href={cvLink} target="_blank" class="btn btn-secondary"
-                    >Download CV</a
-                >
             </div>
         </div>
     </div>
